@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormMasterSuplier
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormMasterSuplier
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -37,8 +37,6 @@ Partial Class FormMasterSuplier
         Me.BtnEdit = New System.Windows.Forms.Button()
         Me.BtnTambah = New System.Windows.Forms.Button()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.IdBarang = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -62,7 +60,7 @@ Partial Class FormMasterSuplier
         '
         'NamaSuplier
         '
-        Me.NamaSuplier.Location = New System.Drawing.Point(125, 95)
+        Me.NamaSuplier.Location = New System.Drawing.Point(125, 64)
         Me.NamaSuplier.Name = "NamaSuplier"
         Me.NamaSuplier.Size = New System.Drawing.Size(100, 23)
         Me.NamaSuplier.TabIndex = 3
@@ -71,7 +69,7 @@ Partial Class FormMasterSuplier
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(33, 98)
+        Me.Label2.Location = New System.Drawing.Point(33, 67)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(87, 17)
         Me.Label2.TabIndex = 2
@@ -79,7 +77,7 @@ Partial Class FormMasterSuplier
         '
         'Alamat
         '
-        Me.Alamat.Location = New System.Drawing.Point(125, 140)
+        Me.Alamat.Location = New System.Drawing.Point(125, 109)
         Me.Alamat.Name = "Alamat"
         Me.Alamat.Size = New System.Drawing.Size(100, 23)
         Me.Alamat.TabIndex = 5
@@ -88,7 +86,7 @@ Partial Class FormMasterSuplier
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(33, 143)
+        Me.Label3.Location = New System.Drawing.Point(33, 112)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(48, 17)
         Me.Label3.TabIndex = 4
@@ -96,7 +94,7 @@ Partial Class FormMasterSuplier
         '
         'Telepon
         '
-        Me.Telepon.Location = New System.Drawing.Point(125, 182)
+        Me.Telepon.Location = New System.Drawing.Point(125, 151)
         Me.Telepon.Name = "Telepon"
         Me.Telepon.Size = New System.Drawing.Size(100, 23)
         Me.Telepon.TabIndex = 7
@@ -105,7 +103,7 @@ Partial Class FormMasterSuplier
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(33, 185)
+        Me.Label4.Location = New System.Drawing.Point(33, 154)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(54, 17)
         Me.Label4.TabIndex = 6
@@ -122,7 +120,7 @@ Partial Class FormMasterSuplier
         '
         'BtnBatal
         '
-        Me.BtnBatal.Location = New System.Drawing.Point(356, 226)
+        Me.BtnBatal.Location = New System.Drawing.Point(351, 206)
         Me.BtnBatal.Name = "BtnBatal"
         Me.BtnBatal.Size = New System.Drawing.Size(75, 23)
         Me.BtnBatal.TabIndex = 16
@@ -131,7 +129,7 @@ Partial Class FormMasterSuplier
         '
         'BtnHapus
         '
-        Me.BtnHapus.Location = New System.Drawing.Point(243, 226)
+        Me.BtnHapus.Location = New System.Drawing.Point(238, 206)
         Me.BtnHapus.Name = "BtnHapus"
         Me.BtnHapus.Size = New System.Drawing.Size(75, 23)
         Me.BtnHapus.TabIndex = 15
@@ -140,7 +138,7 @@ Partial Class FormMasterSuplier
         '
         'BtnEdit
         '
-        Me.BtnEdit.Location = New System.Drawing.Point(131, 226)
+        Me.BtnEdit.Location = New System.Drawing.Point(126, 206)
         Me.BtnEdit.Name = "BtnEdit"
         Me.BtnEdit.Size = New System.Drawing.Size(75, 23)
         Me.BtnEdit.TabIndex = 14
@@ -149,7 +147,7 @@ Partial Class FormMasterSuplier
         '
         'BtnTambah
         '
-        Me.BtnTambah.Location = New System.Drawing.Point(20, 226)
+        Me.BtnTambah.Location = New System.Drawing.Point(15, 206)
         Me.BtnTambah.Name = "BtnTambah"
         Me.BtnTambah.Size = New System.Drawing.Size(75, 23)
         Me.BtnTambah.TabIndex = 13
@@ -159,31 +157,11 @@ Partial Class FormMasterSuplier
         'BindingSource1
         '
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(33, 60)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(65, 17)
-        Me.Label5.TabIndex = 17
-        Me.Label5.Text = "ID Barang"
-        '
-        'IdBarang
-        '
-        Me.IdBarang.FormattingEnabled = True
-        Me.IdBarang.Location = New System.Drawing.Point(125, 60)
-        Me.IdBarang.Name = "IdBarang"
-        Me.IdBarang.Size = New System.Drawing.Size(100, 23)
-        Me.IdBarang.TabIndex = 18
-        '
         'FormMasterSuplier
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(458, 476)
-        Me.Controls.Add(Me.IdBarang)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.BtnBatal)
         Me.Controls.Add(Me.BtnHapus)
         Me.Controls.Add(Me.BtnEdit)
@@ -220,6 +198,4 @@ Partial Class FormMasterSuplier
     Friend WithEvents BtnEdit As Button
     Friend WithEvents BtnTambah As Button
     Friend WithEvents BindingSource1 As BindingSource
-    Friend WithEvents Label5 As Label
-    Friend WithEvents IdBarang As ComboBox
 End Class

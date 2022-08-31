@@ -24,28 +24,14 @@ Public Class FormMasterSuplier
         DataGridView1.DataSource = ds.Tables("t_suplier")
         DataGridView1.ReadOnly = True
     End Sub
-    Sub barang()
-        Call koneksi()
-        cmd = New OdbcCommand("Select id_barang from t_barang", conn)
-        dr = cmd.ExecuteReader
-        IdBarang.Items.Clear()
-        Do While dr.Read
-            IdBarang.Items.Add(dr.Item(0))
-        Loop
-        cmd.Dispose()
-        dr.Close()
-        conn.Close()
-    End Sub
     Private Sub FormMasterSuplier_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KondisiAwal()
-        Call barang()
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         Dim row As DataGridViewRow = DataGridView1.CurrentRow
         Try
             IdSuplier.Text = row.Cells(0).Value.ToString()
-            IdBarang.Text = row.Cells(1).Value.ToString()
             NamaSuplier.Text = row.Cells(2).Value.ToString()
             Alamat.Text = row.Cells(3).Value.ToString()
             Telepon.Text = row.Cells(4).Value.ToString()
@@ -59,7 +45,7 @@ Public Class FormMasterSuplier
     End Sub
 
     Private Sub BtnTambah_Click(sender As Object, e As EventArgs) Handles BtnTambah.Click
-        If IdSuplier.Text = "" Or IdBarang.Text = "" Or NamaSuplier.Text = "" Or Alamat.Text = "" Or Telepon.Text = "" Then
+        If IdSuplier.Text = "" Or NamaSuplier.Text = "" Or Alamat.Text = "" Or Telepon.Text = "" Then
             MsgBox("Data Tidak Boleh Kosong")
         Else
             Try
@@ -71,7 +57,7 @@ Public Class FormMasterSuplier
                     MsgBox(" Maaf, Data dengan ID tersebut sudah ada", MsgBoxStyle.Exclamation, "peringatan!")
                 Else
                     Call koneksi()
-                    Dim InputData As String = "insert into t_suplier values ('" & IdSuplier.Text & "', '" & IdBarang.Text & "','" & NamaSuplier.Text & "','" & Alamat.Text & "','" & Telepon.Text & "' )"
+                    Dim InputData As String = "insert into t_suplier values ('" & IdSuplier.Text & "','" & NamaSuplier.Text & "','" & Alamat.Text & "','" & Telepon.Text & "' )"
                     cmd = New OdbcCommand(InputData, conn)
                     cmd.ExecuteNonQuery()
                     MsgBox("Data Disimpan")
@@ -85,11 +71,11 @@ Public Class FormMasterSuplier
     End Sub
 
     Private Sub BtnEdit_Click(sender As Object, e As EventArgs) Handles BtnEdit.Click
-        If IdSuplier.Text = "" Or IdBarang.Text = "" Or NamaSuplier.Text = "" Or Alamat.Text = "" Or Telepon.Text = "" Then
+        If IdSuplier.Text = "" Or NamaSuplier.Text = "" Or Alamat.Text = "" Or Telepon.Text = "" Then
             MsgBox("Data Tidak Boleh Kosong")
         Else
             Call koneksi()
-            Dim EditData As String = "update t_suplier set id_barang ='" & IdBarang.Text & "', nama_suplier='" & NamaSuplier.Text & "', alamat ='" & Alamat.Text & "','" & Telepon.Text & "',where id_suplier='" & IdSuplier.Text & "'"
+            Dim EditData As String = "update t_suplier set nama_suplier='" & NamaSuplier.Text & "', alamat ='" & Alamat.Text & "','" & Telepon.Text & "',where id_suplier='" & IdSuplier.Text & "'"
             cmd = New OdbcCommand(EditData, conn)
             cmd.ExecuteNonQuery()
             MsgBox("Data Berhasil Dirubah!")
@@ -99,7 +85,7 @@ Public Class FormMasterSuplier
     End Sub
 
     Private Sub BtnHapus_Click(sender As Object, e As EventArgs) Handles BtnHapus.Click
-        If IdSuplier.Text = "" Or IdBarang.Text = "" Or NamaSuplier.Text = "" Or Alamat.Text = "" Or Telepon.Text = "" Then
+        If IdSuplier.Text = "" Or NamaSuplier.Text = "" Or Alamat.Text = "" Or Telepon.Text = "" Then
             MsgBox("Data Tidak Boleh Kosong")
         Else
             Call koneksi()

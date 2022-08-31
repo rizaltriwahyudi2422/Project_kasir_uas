@@ -35,13 +35,13 @@ Partial Class FormMenuUtama
         Me.Suplier = New System.Windows.Forms.ToolStripMenuItem()
         Me.Transaksi = New System.Windows.Forms.ToolStripMenuItem()
         Me.Penjualan = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Pembelian = New System.Windows.Forms.ToolStripMenuItem()
         Me.Laporan = New System.Windows.Forms.ToolStripMenuItem()
         Me.LaporanPenjualan = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LaporanPembelian = New System.Windows.Forms.ToolStripMenuItem()
         Me.Utility = New System.Windows.Forms.ToolStripMenuItem()
         Me.GantiPassword = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.Pembelian = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LaporanPembelian = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -89,25 +89,25 @@ Partial Class FormMenuUtama
         'Kasir
         '
         Me.Kasir.Name = "Kasir"
-        Me.Kasir.Size = New System.Drawing.Size(180, 22)
+        Me.Kasir.Size = New System.Drawing.Size(130, 22)
         Me.Kasir.Text = "Kasir"
         '
         'Pelanggan
         '
         Me.Pelanggan.Name = "Pelanggan"
-        Me.Pelanggan.Size = New System.Drawing.Size(180, 22)
+        Me.Pelanggan.Size = New System.Drawing.Size(130, 22)
         Me.Pelanggan.Text = "Pelanggan"
         '
         'Barang
         '
         Me.Barang.Name = "Barang"
-        Me.Barang.Size = New System.Drawing.Size(180, 22)
+        Me.Barang.Size = New System.Drawing.Size(130, 22)
         Me.Barang.Text = "Barang"
         '
         'Suplier
         '
         Me.Suplier.Name = "Suplier"
-        Me.Suplier.Size = New System.Drawing.Size(180, 22)
+        Me.Suplier.Size = New System.Drawing.Size(130, 22)
         Me.Suplier.Text = "Suplier"
         '
         'Transaksi
@@ -123,6 +123,12 @@ Partial Class FormMenuUtama
         Me.Penjualan.Size = New System.Drawing.Size(180, 22)
         Me.Penjualan.Text = "Penjualan"
         '
+        'Pembelian
+        '
+        Me.Pembelian.Name = "Pembelian"
+        Me.Pembelian.Size = New System.Drawing.Size(180, 22)
+        Me.Pembelian.Text = "Pembelian"
+        '
         'Laporan
         '
         Me.Laporan.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LaporanPenjualan, Me.LaporanPembelian})
@@ -133,8 +139,14 @@ Partial Class FormMenuUtama
         'LaporanPenjualan
         '
         Me.LaporanPenjualan.Name = "LaporanPenjualan"
-        Me.LaporanPenjualan.Size = New System.Drawing.Size(180, 22)
+        Me.LaporanPenjualan.Size = New System.Drawing.Size(176, 22)
         Me.LaporanPenjualan.Text = "Laporan Penjualan"
+        '
+        'LaporanPembelian
+        '
+        Me.LaporanPembelian.Name = "LaporanPembelian"
+        Me.LaporanPembelian.Size = New System.Drawing.Size(176, 22)
+        Me.LaporanPembelian.Text = "Laporan Pembelian"
         '
         'Utility
         '
@@ -153,18 +165,6 @@ Partial Class FormMenuUtama
         '
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
-        '
-        'Pembelian
-        '
-        Me.Pembelian.Name = "Pembelian"
-        Me.Pembelian.Size = New System.Drawing.Size(180, 22)
-        Me.Pembelian.Text = "Pembelian"
-        '
-        'LaporanPembelian
-        '
-        Me.LaporanPembelian.Name = "LaporanPembelian"
-        Me.LaporanPembelian.Size = New System.Drawing.Size(180, 22)
-        Me.LaporanPembelian.Text = "Laporan Pembelian"
         '
         'FormMenuUtama
         '

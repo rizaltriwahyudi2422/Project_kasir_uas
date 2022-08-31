@@ -34,8 +34,6 @@ Partial Class FormMasterBarang
         Me.BtnTambah = New System.Windows.Forms.Button()
         Me.BtnEdit = New System.Windows.Forms.Button()
         Me.BtnBatal = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.NamaSuplier = New System.Windows.Forms.ComboBox()
         Me.BtnCariData = New System.Windows.Forms.Button()
         Me.CariData = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -145,27 +143,9 @@ Partial Class FormMasterBarang
         Me.BtnBatal.Text = "Batal"
         Me.BtnBatal.UseVisualStyleBackColor = True
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(31, 193)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(87, 17)
-        Me.Label5.TabIndex = 13
-        Me.Label5.Text = "Nama Suplier"
-        '
-        'NamaSuplier
-        '
-        Me.NamaSuplier.FormattingEnabled = True
-        Me.NamaSuplier.Location = New System.Drawing.Point(142, 192)
-        Me.NamaSuplier.Name = "NamaSuplier"
-        Me.NamaSuplier.Size = New System.Drawing.Size(148, 23)
-        Me.NamaSuplier.TabIndex = 17
-        '
         'BtnCariData
         '
-        Me.BtnCariData.Location = New System.Drawing.Point(31, 241)
+        Me.BtnCariData.Location = New System.Drawing.Point(31, 208)
         Me.BtnCariData.Name = "BtnCariData"
         Me.BtnCariData.Size = New System.Drawing.Size(84, 26)
         Me.BtnCariData.TabIndex = 18
@@ -174,7 +154,7 @@ Partial Class FormMasterBarang
         '
         'CariData
         '
-        Me.CariData.Location = New System.Drawing.Point(142, 241)
+        Me.CariData.Location = New System.Drawing.Point(142, 208)
         Me.CariData.Name = "CariData"
         Me.CariData.Size = New System.Drawing.Size(333, 23)
         Me.CariData.TabIndex = 19
@@ -186,8 +166,6 @@ Partial Class FormMasterBarang
         Me.ClientSize = New System.Drawing.Size(509, 546)
         Me.Controls.Add(Me.CariData)
         Me.Controls.Add(Me.BtnCariData)
-        Me.Controls.Add(Me.NamaSuplier)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.BtnBatal)
         Me.Controls.Add(Me.BtnEdit)
         Me.Controls.Add(Me.BtnTambah)
@@ -221,8 +199,6 @@ Partial Class FormMasterBarang
     Friend WithEvents BtnTambah As Button
     Friend WithEvents BtnEdit As Button
     Friend WithEvents BtnBatal As Button
-    Friend WithEvents Label5 As Label
-    Friend WithEvents NamaSuplier As ComboBox
     Friend WithEvents BtnCariData As Button
     Friend WithEvents CariData As TextBox
 End Class

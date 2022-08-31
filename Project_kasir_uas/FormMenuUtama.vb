@@ -48,4 +48,8 @@ Public Class FormMenuUtama
     Private Sub Suplier_Click(sender As Object, e As EventArgs) Handles Suplier.Click
         FormMasterSuplier.Show()
     End Sub
+
+    Private Sub Pembelian_Click(sender As Object, e As EventArgs) Handles Pembelian.Click
+        FormPembelian.Show()
+    End Sub
 End Class
