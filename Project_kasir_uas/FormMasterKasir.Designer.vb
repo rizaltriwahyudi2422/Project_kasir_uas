@@ -22,6 +22,7 @@ Partial Class FormMasterKasir
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMasterKasir))
         Me.label_id = New System.Windows.Forms.Label()
         Me.Username = New System.Windows.Forms.Label()
         Me.Role = New System.Windows.Forms.Label()
@@ -35,6 +36,10 @@ Partial Class FormMasterKasir
         Me.BtnHapus = New System.Windows.Forms.Button()
         Me.BtnTutup = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -42,7 +47,7 @@ Partial Class FormMasterKasir
         '
         Me.label_id.AutoSize = True
         Me.label_id.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.label_id.Location = New System.Drawing.Point(22, 27)
+        Me.label_id.Location = New System.Drawing.Point(24, 27)
         Me.label_id.Name = "label_id"
         Me.label_id.Size = New System.Drawing.Size(22, 18)
         Me.label_id.TabIndex = 0
@@ -80,23 +85,23 @@ Partial Class FormMasterKasir
         '
         'TextId
         '
-        Me.TextId.Location = New System.Drawing.Point(128, 27)
+        Me.TextId.Location = New System.Drawing.Point(126, 27)
         Me.TextId.Name = "TextId"
-        Me.TextId.Size = New System.Drawing.Size(124, 23)
+        Me.TextId.Size = New System.Drawing.Size(126, 23)
         Me.TextId.TabIndex = 4
         '
         'TextUsername
         '
         Me.TextUsername.Location = New System.Drawing.Point(126, 61)
         Me.TextUsername.Name = "TextUsername"
-        Me.TextUsername.Size = New System.Drawing.Size(124, 23)
+        Me.TextUsername.Size = New System.Drawing.Size(126, 23)
         Me.TextUsername.TabIndex = 5
         '
         'TextPassword
         '
         Me.TextPassword.Location = New System.Drawing.Point(126, 95)
         Me.TextPassword.Name = "TextPassword"
-        Me.TextPassword.Size = New System.Drawing.Size(124, 23)
+        Me.TextPassword.Size = New System.Drawing.Size(126, 23)
         Me.TextPassword.TabIndex = 6
         '
         'BoxRole
@@ -105,48 +110,58 @@ Partial Class FormMasterKasir
         Me.BoxRole.Items.AddRange(New Object() {"admin", "kasir"})
         Me.BoxRole.Location = New System.Drawing.Point(126, 126)
         Me.BoxRole.Name = "BoxRole"
-        Me.BoxRole.Size = New System.Drawing.Size(121, 23)
+        Me.BoxRole.Size = New System.Drawing.Size(126, 23)
         Me.BoxRole.TabIndex = 7
         '
         'BtnInput
         '
-        Me.BtnInput.Location = New System.Drawing.Point(24, 169)
+        Me.BtnInput.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnInput.ForeColor = System.Drawing.SystemColors.Control
+        Me.BtnInput.Image = CType(resources.GetObject("BtnInput.Image"), System.Drawing.Image)
+        Me.BtnInput.Location = New System.Drawing.Point(22, 165)
         Me.BtnInput.Name = "BtnInput"
-        Me.BtnInput.Size = New System.Drawing.Size(75, 23)
+        Me.BtnInput.Size = New System.Drawing.Size(84, 30)
         Me.BtnInput.TabIndex = 8
-        Me.BtnInput.Text = "INPUT"
-        Me.BtnInput.UseVisualStyleBackColor = True
+        Me.BtnInput.UseVisualStyleBackColor = False
         '
         'BtnEdit
         '
-        Me.BtnEdit.Location = New System.Drawing.Point(126, 169)
+        Me.BtnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEdit.ForeColor = System.Drawing.SystemColors.Control
+        Me.BtnEdit.Image = CType(resources.GetObject("BtnEdit.Image"), System.Drawing.Image)
+        Me.BtnEdit.Location = New System.Drawing.Point(126, 161)
         Me.BtnEdit.Name = "BtnEdit"
-        Me.BtnEdit.Size = New System.Drawing.Size(75, 23)
+        Me.BtnEdit.Size = New System.Drawing.Size(75, 39)
         Me.BtnEdit.TabIndex = 9
-        Me.BtnEdit.Text = "EDIT"
         Me.BtnEdit.UseVisualStyleBackColor = True
         '
         'BtnHapus
         '
-        Me.BtnHapus.Location = New System.Drawing.Point(222, 169)
+        Me.BtnHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnHapus.ForeColor = System.Drawing.SystemColors.Control
+        Me.BtnHapus.Image = CType(resources.GetObject("BtnHapus.Image"), System.Drawing.Image)
+        Me.BtnHapus.Location = New System.Drawing.Point(222, 164)
         Me.BtnHapus.Name = "BtnHapus"
-        Me.BtnHapus.Size = New System.Drawing.Size(75, 23)
+        Me.BtnHapus.Size = New System.Drawing.Size(75, 31)
         Me.BtnHapus.TabIndex = 10
-        Me.BtnHapus.Text = "HAPUS"
         Me.BtnHapus.UseVisualStyleBackColor = True
         '
         'BtnTutup
         '
-        Me.BtnTutup.Location = New System.Drawing.Point(316, 169)
+        Me.BtnTutup.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnTutup.ForeColor = System.Drawing.SystemColors.Control
+        Me.BtnTutup.Image = CType(resources.GetObject("BtnTutup.Image"), System.Drawing.Image)
+        Me.BtnTutup.Location = New System.Drawing.Point(316, 165)
         Me.BtnTutup.Name = "BtnTutup"
-        Me.BtnTutup.Size = New System.Drawing.Size(75, 23)
+        Me.BtnTutup.Size = New System.Drawing.Size(75, 35)
         Me.BtnTutup.TabIndex = 11
-        Me.BtnTutup.Text = "TUTUP"
         Me.BtnTutup.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToOrderColumns = True
+        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Window
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(24, 222)
         Me.DataGridView1.Name = "DataGridView1"
@@ -154,11 +169,52 @@ Partial Class FormMasterKasir
         Me.DataGridView1.Size = New System.Drawing.Size(367, 164)
         Me.DataGridView1.TabIndex = 12
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(48, 198)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(35, 15)
+        Me.Label1.TabIndex = 13
+        Me.Label1.Text = "Input"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(149, 198)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(27, 15)
+        Me.Label2.TabIndex = 14
+        Me.Label2.Text = "Edit"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(240, 198)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(40, 15)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Delete"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(337, 198)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(26, 15)
+        Me.Label4.TabIndex = 16
+        Me.Label4.Text = "Exit"
+        '
         'FormMasterKasir
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(418, 408)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.BtnTutup)
         Me.Controls.Add(Me.BtnHapus)
@@ -172,6 +228,7 @@ Partial Class FormMasterKasir
         Me.Controls.Add(Me.Role)
         Me.Controls.Add(Me.Username)
         Me.Controls.Add(Me.label_id)
+        Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "FormMasterKasir"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormMasterKasir"
@@ -194,4 +251,8 @@ Partial Class FormMasterKasir
     Friend WithEvents BtnHapus As Button
     Friend WithEvents BtnTutup As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class

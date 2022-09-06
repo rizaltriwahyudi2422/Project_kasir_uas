@@ -112,4 +112,8 @@ Public Class FormMasterSuplier
     Private Sub NamaSuplier_TextChanged(sender As Object, e As EventArgs) Handles NamaSuplier.TextChanged
 
     End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
 End Class

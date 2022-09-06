@@ -16,12 +16,15 @@ Public Class FormMasterBarang
         NamaBarang.Text = ""
         HargaBarang.Text = ""
         Stok.Text = ""
+        HargaJual.Text = ""
         Call koneksi()
         da = New OdbcDataAdapter("Select * From t_barang", conn)
         ds = New DataSet
         da.Fill(ds, "t_barang")
         DataGridView1.DataSource = ds.Tables("t_barang")
         DataGridView1.ReadOnly = True
+        DataGridView1.Refresh()
+
     End Sub
     Private Sub FormMasterBarang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KondisiAwal()
@@ -34,13 +37,14 @@ Public Class FormMasterBarang
             NamaBarang.Text = row.Cells(1).Value.ToString()
             HargaBarang.Text = row.Cells(2).Value.ToString()
             Stok.Text = row.Cells(3).Value.ToString()
+            HargaJual.Text = row.Cells(4).Value.ToString()
         Catch ex As Exception
 
         End Try
     End Sub
 
     Private Sub BtnTambah_Click(sender As Object, e As EventArgs) Handles BtnTambah.Click
-        If KodeBarang.Text = "" Or NamaBarang.Text = "" Or HargaBarang.Text = "" Or Stok.Text = "" Then
+        If KodeBarang.Text = "" Or NamaBarang.Text = "" Or HargaBarang.Text = "" Or Stok.Text = "" Or HargaJual.Text = "" Then
             MsgBox("Data Barang Wajib Di isi!")
         Else
             Try
@@ -52,7 +56,7 @@ Public Class FormMasterBarang
                     MsgBox(" Maaf, Data dengan kode tersebut sudah ada", MsgBoxStyle.Exclamation, "peringatan!")
                 Else
                     Call koneksi()
-                    Dim InputData As String = "insert into t_barang values ('" & KodeBarang.Text & "','" & NamaBarang.Text & "','" & HargaBarang.Text & "','" & Stok.Text & "')"
+                    Dim InputData As String = "insert into t_barang values ('" & KodeBarang.Text & "','" & NamaBarang.Text & "','" & HargaBarang.Text & "','" & Stok.Text & "','" & HargaJual.Text & "')"
                     cmd = New OdbcCommand(InputData, conn)
                     cmd.ExecuteNonQuery()
                     MsgBox("Data Disimpan")
@@ -66,11 +70,11 @@ Public Class FormMasterBarang
     End Sub
 
     Private Sub BtnEdit_Click(sender As Object, e As EventArgs) Handles BtnEdit.Click
-        If KodeBarang.Text = "" Or NamaBarang.Text = "" Or HargaBarang.Text = "" Or Stok.Text = "" Then
+        If KodeBarang.Text = "" Or NamaBarang.Text = "" Or HargaBarang.Text = "" Or Stok.Text = "" Or HargaJual.Text = "" Then
             MsgBox("Data Barang Wajib Di isi!")
         Else
             Call koneksi()
-            Dim EditData As String = "update t_barang set nama_barang='" & NamaBarang.Text & "',harga_satuan='" & HargaBarang.Text & "',stok='" & Stok.Text & "'where id_barang='" & KodeBarang.Text & "' "
+            Dim EditData As String = "update t_barang set nama_barang='" & NamaBarang.Text & "',harga_satuan='" & HargaBarang.Text & "',stok='" & Stok.Text & "', harga_jual = '" & HargaJual.Text & "' where id_barang='" & KodeBarang.Text & "' "
             cmd = New OdbcCommand(EditData, conn)
             cmd.ExecuteNonQuery()
             MsgBox(" Data Berhasil di Edit")
@@ -82,13 +86,27 @@ Public Class FormMasterBarang
         Close()
     End Sub
 
-    Private Sub BtnCariData_Click(sender As Object, e As EventArgs) Handles BtnCariData.Click
-        Call koneksi()
-        cmd = New OdbcCommand("select  * from t_barang where id_barang like '%'" & CariData.Text & "'%'", conn)
-        dr = cmd.ExecuteReader
-        DataGridView1.Rows.Clear()
-        Do While dr.Read = True
-            DataGridView1.Rows.Add(dr(0), dr(1), dr(2), dr(3), dr(4))
-        Loop
+    Private Sub CariData_TextChanged(sender As Object, e As EventArgs) Handles CariData.TextChanged
+        Dim da As OdbcDataAdapter
+        Dim ds As New DataSet
+        Try
+            Call koneksi()
+            da = New OdbcDataAdapter("select  * from t_barang where id_barang like '%" & CariData.Text & "%'", conn)
+            da.Fill(ds)
+            DataGridView1.DataSource = ds.Tables(0)
+            conn.Close()
+            KodeBarang.Clear()
+            NamaBarang.Clear()
+            HargaBarang.Clear()
+            Stok.Clear()
+            HargaJual.Clear()
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
     End Sub
 End Class

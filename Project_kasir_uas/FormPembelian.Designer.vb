@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormPembelian
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormPembelian
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -31,13 +31,6 @@ Partial Class FormPembelian
         Me.Label4 = New System.Windows.Forms.Label()
         Me.KodeSuplier = New System.Windows.Forms.ComboBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.KodeBarang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NamaBarang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JumlahBeli = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.StokAwal = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.StokAkhir = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalBayar = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalItem = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -48,6 +41,13 @@ Partial Class FormPembelian
         Me.LabelTgl = New System.Windows.Forms.Label()
         Me.LabelSuplier = New System.Windows.Forms.Label()
         Me.LabelTotalItem = New System.Windows.Forms.Label()
+        Me.KodeBarang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NamaBarang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JumlahBeli = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StokAwal = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StokAkhir = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalBayar = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -120,46 +120,11 @@ Partial Class FormPembelian
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.KodeBarang, Me.NamaBarang, Me.Harga, Me.JumlahBeli, Me.StokAwal, Me.StokAkhir, Me.TotalBayar})
-        Me.DataGridView1.Location = New System.Drawing.Point(24, 104)
+        Me.DataGridView1.Location = New System.Drawing.Point(34, 104)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 25
         Me.DataGridView1.Size = New System.Drawing.Size(643, 210)
         Me.DataGridView1.TabIndex = 8
-        '
-        'KodeBarang
-        '
-        Me.KodeBarang.HeaderText = "Kode Barang"
-        Me.KodeBarang.Name = "KodeBarang"
-        '
-        'NamaBarang
-        '
-        Me.NamaBarang.HeaderText = "Nama Barang"
-        Me.NamaBarang.Name = "NamaBarang"
-        '
-        'Harga
-        '
-        Me.Harga.HeaderText = "Harga"
-        Me.Harga.Name = "Harga"
-        '
-        'JumlahBeli
-        '
-        Me.JumlahBeli.HeaderText = "Jumlah Beli"
-        Me.JumlahBeli.Name = "JumlahBeli"
-        '
-        'StokAwal
-        '
-        Me.StokAwal.HeaderText = "Stok Awal"
-        Me.StokAwal.Name = "StokAwal"
-        '
-        'StokAkhir
-        '
-        Me.StokAkhir.HeaderText = "Stok Akhir"
-        Me.StokAkhir.Name = "StokAkhir"
-        '
-        'TotalBayar
-        '
-        Me.TotalBayar.HeaderText = "Total Bayar"
-        Me.TotalBayar.Name = "TotalBayar"
         '
         'TotalItem
         '
@@ -249,6 +214,42 @@ Partial Class FormPembelian
         Me.LabelTotalItem.TabIndex = 18
         Me.LabelTotalItem.Text = "Label10"
         '
+        'KodeBarang
+        '
+        Me.KodeBarang.HeaderText = "Kode Barang"
+        Me.KodeBarang.Name = "KodeBarang"
+        Me.KodeBarang.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'NamaBarang
+        '
+        Me.NamaBarang.HeaderText = "Nama Barang"
+        Me.NamaBarang.Name = "NamaBarang"
+        '
+        'Harga
+        '
+        Me.Harga.HeaderText = "Harga"
+        Me.Harga.Name = "Harga"
+        '
+        'JumlahBeli
+        '
+        Me.JumlahBeli.HeaderText = "Jumlah Beli"
+        Me.JumlahBeli.Name = "JumlahBeli"
+        '
+        'StokAwal
+        '
+        Me.StokAwal.HeaderText = "Stok Awal"
+        Me.StokAwal.Name = "StokAwal"
+        '
+        'StokAkhir
+        '
+        Me.StokAkhir.HeaderText = "Stok Akhir"
+        Me.StokAkhir.Name = "StokAkhir"
+        '
+        'TotalBayar
+        '
+        Me.TotalBayar.HeaderText = "Total Bayar"
+        Me.TotalBayar.Name = "TotalBayar"
+        '
         'FormPembelian
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -274,6 +275,7 @@ Partial Class FormPembelian
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FormPembelian"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormPembelian"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -290,12 +292,6 @@ Partial Class FormPembelian
     Friend WithEvents Label4 As Label
     Friend WithEvents KodeSuplier As ComboBox
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents KodeBarang As DataGridViewTextBoxColumn
-    Friend WithEvents NamaBarang As DataGridViewTextBoxColumn
-    Friend WithEvents Harga As DataGridViewTextBoxColumn
-    Friend WithEvents JumlahBeli As DataGridViewTextBoxColumn
-    Friend WithEvents StokAwal As DataGridViewTextBoxColumn
-    Friend WithEvents StokAkhir As DataGridViewTextBoxColumn
     Friend WithEvents TotalItem As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Button1 As Button
@@ -306,5 +302,11 @@ Partial Class FormPembelian
     Friend WithEvents LabelTgl As Label
     Friend WithEvents LabelSuplier As Label
     Friend WithEvents LabelTotalItem As Label
+    Friend WithEvents KodeBarang As DataGridViewTextBoxColumn
+    Friend WithEvents NamaBarang As DataGridViewTextBoxColumn
+    Friend WithEvents Harga As DataGridViewTextBoxColumn
+    Friend WithEvents JumlahBeli As DataGridViewTextBoxColumn
+    Friend WithEvents StokAwal As DataGridViewTextBoxColumn
+    Friend WithEvents StokAkhir As DataGridViewTextBoxColumn
     Friend WithEvents TotalBayar As DataGridViewTextBoxColumn
 End Class

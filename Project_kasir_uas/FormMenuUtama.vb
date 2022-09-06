@@ -22,7 +22,6 @@ Public Class FormMenuUtama
         Master.Visible = False
         Transaksi.Visible = False
         Laporan.Visible = False
-        Utility.Visible = False
     End Sub
 
     Private Sub Keluar_Click(sender As Object, e As EventArgs) Handles Keluar.Click
@@ -51,5 +50,17 @@ Public Class FormMenuUtama
 
     Private Sub Pembelian_Click(sender As Object, e As EventArgs) Handles Pembelian.Click
         FormPembelian.Show()
+    End Sub
+
+    Private Sub Penjualan_Click(sender As Object, e As EventArgs) Handles Penjualan.Click
+        FormPenjualanBarang.Show()
+    End Sub
+
+    Private Sub LaporanPembelian_Click(sender As Object, e As EventArgs) Handles LaporanPembelian.Click
+        FormLaporanPembelian.Show()
+    End Sub
+
+    Private Sub LaporanPenjualan_Click(sender As Object, e As EventArgs) Handles LaporanPenjualan.Click
+        FormLaporanJual.Show()
     End Sub
 End Class

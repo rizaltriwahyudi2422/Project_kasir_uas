@@ -57,7 +57,60 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BtnBatal.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAIQAAACEATCrHSUAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABFklEQVRIS62VQU7DQBAEfYEnROQvcA5C4luBR5CfcEpAQvCA3AMcQOINpNuRo07v7CwOKakkZ2bc
+        G9uytwM38B3+jvAT3sNz2GRsuHoHm0Qnqt/wFiqXkD1eSRMPjPyAztBrokGZTq1eoCGZjtcf4Suc9L8E
+        Dcl0VnC5O+wZ5tZwysKAhmS20NmDRbSR2cLn94t4o6byDKMZ9w2GjUiF9z+acY9eIMLneYsuYNGo2UJn
+        9+FEG5kOn8PT7rBnmDsIJxqS6XidL9oLPNmLVqsXaEimU6sXaEimU6sXaEimcgVZiz7jBR40xjlswl0p
+        OjmT/5zhf9qTuR1yW4yC1H9xBq/hAv5AD9/Ak8HFZvABfkGGc/Ej6LotdNY7IQVXQDEAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="BtnHapus.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAKYAAACmAd19/zgAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABEUlEQVRIS+3Vv0pCcRQH8MNtCgxyzEEIAqFncHdvarKewEGIGgIbVWjIwTcIGnV16gkce4oCEVGI
+        4Nf3lD/8es8R8t6h5R74wPnj7xwcRAkh7ISowgt8wCzlHZ6h4r2N3GaEeIIbSJxZAvfQS8+Y24wQb3Di
+        zRTiFKbeLHKbEaINJW+mEGVoebNok/x+5VfQIo/JrgNHsFx/KI85HJoD6yPncJ3DFdS2dnLx0xC5hFFG
+        F2afaYg8gCZZ3Jl9pmEPNCnXH92Yap6pTAeOKddZl2qeqeJAcUAbxYH0PtP4hwNnlPdhQDXP1J8OdOiB
+        WlH+CV9U80zdmn2mIdKgB/uqm32mIXIAQ9jn320Bj+ldIQT5BofTqPDt8QnbAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BtnEdit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAIQAAACEATCrHSUAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABNUlEQVRIS+3Vu0oDQRiG4REsItjYJmhroYWmt7UUBL0A78BeG+0VYpXLSCNo5w1YWApiI3hoVCxs
+        xMP7LfvLZDOTWccFG194CHFm/1k2CbqG62CA2/K1jcaawzU+PcdorDW8wT/gBb9Od76DCWzCP+QMbhK7
+        uMRjwgn8ZnEFDetDh2xAhzxgHm4PdmLKOSx/uLFD1rGAohtocRUzCbpYhT5Qs4+hbKFuoTs3eiyLGMoW
+        6/Tj4co2pMoarmzTuLKHK9s4Ln2f/aFGw7+/LbFscyz9Tl7hD5bqnZ+i+jspsgtiLcEfLKHHYmsjRRfK
+        tmB73nGB0GOJzokulGnYNlYwrT9Eyj6gbv8HJPu7A+6hheXiXV5daMZd8a7SIbT4gdB/sTp0rWYcYKQp
+        HOEZ2pTjCT204OXcFzzMwQJhT6D2AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BtnTambah.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAIQAAACEATCrHSUAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABkUlEQVRIS83VPyhFYRjH8SN0RRlMUqQMmBgkizLaKJlEsmCRQTEqxWBBNnUn2ZSFzZ2sMlJspJiu
+        gcif4/sc77k955z3nj+XwalP3fPc531+nffUexzXdQO4BvEKuUlrFE2ojsyLFBxnBXpxGhIwhH0EQgLD
+        vcLvAuR3IOSvAsZQh3YjV5qnh3uFygKusajMl+bp4V6hsoCwYmmeHu4VogEnmLM4g+7TMgWsostiF7pP
+        yxRQiUwBmxhIMItP+GsyBRxhOsEO9Jr/sUVyHr1gMtwTxtWP1FvUiR7UmvsqNGMdW2Wcwh8uYgPqMYVt
+        yAseRw3kCLiEHlSOPYBLHvXGNGkX6EYbHk0tTjSAS87ze9NgcwU50JZUrRxrgOyxbtqAHL26toDGUM3G
+        GlBQDXm0QLbl0NTEgemNe1JhDTg3f75hGDk0YAL+wmPTe6dqNtaAPdUg5CslZ7uuraE1VLOxBvThwzSI
+        J8jT+PfP6MAIignykQATsowv+EN975jRvWlFCz8fb/nIPOAW8pJ7w33puM43ROo2ZrUNcywAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
   <metadata name="BindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
   </metadata>
 </root>

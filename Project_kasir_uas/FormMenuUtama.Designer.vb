@@ -30,7 +30,6 @@ Partial Class FormMenuUtama
         Me.Keluar = New System.Windows.Forms.ToolStripMenuItem()
         Me.Master = New System.Windows.Forms.ToolStripMenuItem()
         Me.Kasir = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Pelanggan = New System.Windows.Forms.ToolStripMenuItem()
         Me.Barang = New System.Windows.Forms.ToolStripMenuItem()
         Me.Suplier = New System.Windows.Forms.ToolStripMenuItem()
         Me.Transaksi = New System.Windows.Forms.ToolStripMenuItem()
@@ -39,15 +38,13 @@ Partial Class FormMenuUtama
         Me.Laporan = New System.Windows.Forms.ToolStripMenuItem()
         Me.LaporanPenjualan = New System.Windows.Forms.ToolStripMenuItem()
         Me.LaporanPembelian = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Utility = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GantiPassword = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MnFile, Me.Master, Me.Transaksi, Me.Laporan, Me.Utility})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MnFile, Me.Master, Me.Transaksi, Me.Laporan})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
@@ -81,7 +78,7 @@ Partial Class FormMenuUtama
         '
         'Master
         '
-        Me.Master.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Kasir, Me.Pelanggan, Me.Barang, Me.Suplier})
+        Me.Master.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Kasir, Me.Barang, Me.Suplier})
         Me.Master.Name = "Master"
         Me.Master.Size = New System.Drawing.Size(55, 20)
         Me.Master.Text = "Master"
@@ -89,25 +86,19 @@ Partial Class FormMenuUtama
         'Kasir
         '
         Me.Kasir.Name = "Kasir"
-        Me.Kasir.Size = New System.Drawing.Size(130, 22)
-        Me.Kasir.Text = "Kasir"
-        '
-        'Pelanggan
-        '
-        Me.Pelanggan.Name = "Pelanggan"
-        Me.Pelanggan.Size = New System.Drawing.Size(130, 22)
-        Me.Pelanggan.Text = "Pelanggan"
+        Me.Kasir.Size = New System.Drawing.Size(111, 22)
+        Me.Kasir.Text = "User"
         '
         'Barang
         '
         Me.Barang.Name = "Barang"
-        Me.Barang.Size = New System.Drawing.Size(130, 22)
+        Me.Barang.Size = New System.Drawing.Size(111, 22)
         Me.Barang.Text = "Barang"
         '
         'Suplier
         '
         Me.Suplier.Name = "Suplier"
-        Me.Suplier.Size = New System.Drawing.Size(130, 22)
+        Me.Suplier.Size = New System.Drawing.Size(111, 22)
         Me.Suplier.Text = "Suplier"
         '
         'Transaksi
@@ -120,13 +111,13 @@ Partial Class FormMenuUtama
         'Penjualan
         '
         Me.Penjualan.Name = "Penjualan"
-        Me.Penjualan.Size = New System.Drawing.Size(180, 22)
+        Me.Penjualan.Size = New System.Drawing.Size(130, 22)
         Me.Penjualan.Text = "Penjualan"
         '
         'Pembelian
         '
         Me.Pembelian.Name = "Pembelian"
-        Me.Pembelian.Size = New System.Drawing.Size(180, 22)
+        Me.Pembelian.Size = New System.Drawing.Size(130, 22)
         Me.Pembelian.Text = "Pembelian"
         '
         'Laporan
@@ -147,19 +138,6 @@ Partial Class FormMenuUtama
         Me.LaporanPembelian.Name = "LaporanPembelian"
         Me.LaporanPembelian.Size = New System.Drawing.Size(176, 22)
         Me.LaporanPembelian.Text = "Laporan Pembelian"
-        '
-        'Utility
-        '
-        Me.Utility.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GantiPassword})
-        Me.Utility.Name = "Utility"
-        Me.Utility.Size = New System.Drawing.Size(50, 20)
-        Me.Utility.Text = "Utility"
-        '
-        'GantiPassword
-        '
-        Me.GantiPassword.Name = "GantiPassword"
-        Me.GantiPassword.Size = New System.Drawing.Size(155, 22)
-        Me.GantiPassword.Text = "Ganti Password"
         '
         'ContextMenuStrip1
         '
@@ -190,14 +168,11 @@ Partial Class FormMenuUtama
     Friend WithEvents Keluar As ToolStripMenuItem
     Friend WithEvents Master As ToolStripMenuItem
     Friend WithEvents Kasir As ToolStripMenuItem
-    Friend WithEvents Pelanggan As ToolStripMenuItem
     Friend WithEvents Barang As ToolStripMenuItem
     Friend WithEvents Transaksi As ToolStripMenuItem
     Friend WithEvents Penjualan As ToolStripMenuItem
     Friend WithEvents Laporan As ToolStripMenuItem
     Friend WithEvents LaporanPenjualan As ToolStripMenuItem
-    Friend WithEvents Utility As ToolStripMenuItem
-    Friend WithEvents GantiPassword As ToolStripMenuItem
     Friend WithEvents Suplier As ToolStripMenuItem
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents PembelianToolStripMenuItem As ToolStripMenuItem

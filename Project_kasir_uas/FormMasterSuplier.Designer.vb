@@ -23,6 +23,7 @@ Partial Class FormMasterSuplier
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMasterSuplier))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.IdSuplier = New System.Windows.Forms.TextBox()
         Me.NamaSuplier = New System.Windows.Forms.TextBox()
@@ -37,6 +38,10 @@ Partial Class FormMasterSuplier
         Me.BtnEdit = New System.Windows.Forms.Button()
         Me.BtnTambah = New System.Windows.Forms.Button()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -120,48 +125,101 @@ Partial Class FormMasterSuplier
         '
         'BtnBatal
         '
-        Me.BtnBatal.Location = New System.Drawing.Point(351, 206)
+        Me.BtnBatal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnBatal.ForeColor = System.Drawing.SystemColors.Control
+        Me.BtnBatal.Image = CType(resources.GetObject("BtnBatal.Image"), System.Drawing.Image)
+        Me.BtnBatal.Location = New System.Drawing.Point(316, 192)
         Me.BtnBatal.Name = "BtnBatal"
-        Me.BtnBatal.Size = New System.Drawing.Size(75, 23)
+        Me.BtnBatal.Size = New System.Drawing.Size(62, 34)
         Me.BtnBatal.TabIndex = 16
-        Me.BtnBatal.Text = "Back"
         Me.BtnBatal.UseVisualStyleBackColor = True
         '
         'BtnHapus
         '
-        Me.BtnHapus.Location = New System.Drawing.Point(238, 206)
+        Me.BtnHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnHapus.ForeColor = System.Drawing.SystemColors.Control
+        Me.BtnHapus.Image = CType(resources.GetObject("BtnHapus.Image"), System.Drawing.Image)
+        Me.BtnHapus.Location = New System.Drawing.Point(199, 190)
         Me.BtnHapus.Name = "BtnHapus"
-        Me.BtnHapus.Size = New System.Drawing.Size(75, 23)
+        Me.BtnHapus.Size = New System.Drawing.Size(75, 39)
         Me.BtnHapus.TabIndex = 15
-        Me.BtnHapus.Text = "Hapus"
         Me.BtnHapus.UseVisualStyleBackColor = True
         '
         'BtnEdit
         '
-        Me.BtnEdit.Location = New System.Drawing.Point(126, 206)
+        Me.BtnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEdit.ForeColor = System.Drawing.SystemColors.Control
+        Me.BtnEdit.Image = CType(resources.GetObject("BtnEdit.Image"), System.Drawing.Image)
+        Me.BtnEdit.Location = New System.Drawing.Point(96, 192)
         Me.BtnEdit.Name = "BtnEdit"
-        Me.BtnEdit.Size = New System.Drawing.Size(75, 23)
+        Me.BtnEdit.Size = New System.Drawing.Size(92, 34)
         Me.BtnEdit.TabIndex = 14
         Me.BtnEdit.Text = "Edit"
         Me.BtnEdit.UseVisualStyleBackColor = True
         '
         'BtnTambah
         '
-        Me.BtnTambah.Location = New System.Drawing.Point(15, 206)
+        Me.BtnTambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnTambah.ForeColor = System.Drawing.SystemColors.Control
+        Me.BtnTambah.Image = CType(resources.GetObject("BtnTambah.Image"), System.Drawing.Image)
+        Me.BtnTambah.Location = New System.Drawing.Point(15, 190)
         Me.BtnTambah.Name = "BtnTambah"
-        Me.BtnTambah.Size = New System.Drawing.Size(75, 23)
+        Me.BtnTambah.Size = New System.Drawing.Size(75, 39)
         Me.BtnTambah.TabIndex = 13
-        Me.BtnTambah.Text = "Tambah"
         Me.BtnTambah.UseVisualStyleBackColor = True
         '
         'BindingSource1
         '
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.Location = New System.Drawing.Point(27, 223)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(54, 17)
+        Me.Label5.TabIndex = 17
+        Me.Label5.Text = "Tambah"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label6.Location = New System.Drawing.Point(125, 223)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(30, 17)
+        Me.Label6.TabIndex = 18
+        Me.Label6.Text = "Edit"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label7.Location = New System.Drawing.Point(213, 223)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(45, 17)
+        Me.Label7.TabIndex = 19
+        Me.Label7.Text = "Delete"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.Location = New System.Drawing.Point(329, 223)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(34, 17)
+        Me.Label8.TabIndex = 20
+        Me.Label8.Text = "Back"
+        '
         'FormMasterSuplier
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(458, 476)
+        Me.ClientSize = New System.Drawing.Size(413, 476)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.BtnBatal)
         Me.Controls.Add(Me.BtnHapus)
         Me.Controls.Add(Me.BtnEdit)
@@ -198,4 +256,8 @@ Partial Class FormMasterSuplier
     Friend WithEvents BtnEdit As Button
     Friend WithEvents BtnTambah As Button
     Friend WithEvents BindingSource1 As BindingSource
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
 End Class
